@@ -94,7 +94,7 @@ function validateInputs() {
     addButton.setAttribute("disabled", true);
   }
 }
-
+console.log(durationInput)
 async function handleFormSubmit(event) {
   event.preventDefault();
 
