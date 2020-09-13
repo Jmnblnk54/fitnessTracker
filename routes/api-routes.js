@@ -33,7 +33,7 @@ router.post("/workouts", (req, res) => {
         res.json(err);
     });
 });
-
+    
 //add exercises to previous workout
 router.put("/workouts/:id", ({ body, params }, res) =>{
     console.log(params.id)
