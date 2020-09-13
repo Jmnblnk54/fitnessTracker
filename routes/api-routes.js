@@ -36,6 +36,7 @@ router.post("/workouts", (req, res) => {
 
 //add exercises to previous workout
 router.put("/workouts/:id", ({ body, params }, res) =>{
+    console.log(params.id)
     db.Workout.findByIdAndUpdate(params.id,
         {$push: { exercises: body } }, { new: true })
         .then(dbworkout => {
